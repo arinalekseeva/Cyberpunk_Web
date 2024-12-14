@@ -1,0 +1,972 @@
+@font-face {
+    font-family: Ofont;
+    src: url('../ofont.ru_Archangelsk.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Ofont, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Шапка */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+.header_list {
+    display: flex;
+    gap: 40px;
+} 
+
+/* Приветствунная секция */
+
+.welcom {
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    margin-top: -100px;
+    padding-top: 631px;
+
+    background-image: url("../img/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcom h2 {
+    font-size: 62px;
+    color: #000;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: #f8f200;
+    background: #000;
+    padding: 19px 50px;
+    width: 272px;
+    height: 78px;
+    margin-left: 70px;
+}
+
+.welcom_text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcom_yellow {
+    background-image: url("../img/yellowpramoygolnik.png");
+    width: 624px;
+    height: 369px;
+}
+
+.welcom_yellow h2 {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+/* секция найт сити */
+.nait_text h2 {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 62px;
+    color: #000;
+}
+
+.nait_text .p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #777;
+    font-size: 18px;
+    line-height: 189%;
+}
+
+.cyberpunk-2077 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 189%;
+    color: #52bedc;
+}
+
+.nait_text_podtext p{
+    display: inline;
+}
+
+.nait_text_podtext {
+    max-width: 965px;
+}
+
+.photo_1_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+}
+
+.nait_photo {
+    display: flex;
+    margin-top: 70px;
+}
+
+.nait_photo_3 {
+    margin-left: 32px;
+    height: 424px;
+    width: auto; 
+}
+
+/* Секция акции */
+.promotion {
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    background-image: url("../img/bg_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 70px;
+}
+
+
+.promotion_1 {
+    display: flex;
+    align-items:end;
+    padding-top: 85px;
+}
+
+.promotion_1 h2 {
+    font-weight: 400;
+    font-size: 62px;
+    margin-left: 32px;
+}
+
+.promotion_info {
+    margin-top: 25px;
+    width: 990px;
+}
+
+.promotion_info p{
+    display: inline;
+    line-height: 189%;
+    font-size: 18px;
+}
+
+.promotion_info_p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.promotion_info_p_blue {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #52bedc;
+}
+
+.promption_2_img {
+    display: flex;
+}
+
+.promption_2_img_xbox {
+    z-index: 2;
+}
+
+.promption_2_img_pc5 {
+    margin-left: -130px;
+    z-index: 1;
+}
+
+.promption_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promption_2_anketa_person {
+    width: 460px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #777;
+    padding: 35px 0 13px;
+    outline: 0;
+}
+
+.promption_2_anketa_person input {
+    width: 100%; 
+    height: 100%; 
+    border: none;
+    background: transparent;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+}
+
+.promption_2_anketa_fail {
+    margin-top: 35px;
+    width: 460px;
+    height: 120px;
+    background-image: url("../img/prikrepitphoto.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.promption_2_anketa_fail a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fff;
+}
+
+.promption_2_anketa_fail h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 7px;
+}
+
+.pc_and_xbox {
+    display: none;
+}
+
+.promption_2_anketa_person_btn {
+    margin-top: 35px;
+    width: 192px;
+    height: 59px;
+    background: #f8f200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.promption_2_anketa_person_btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+.perconal_dannie {
+    margin-top: 15px;
+    display: flex;
+    margin-bottom: 140px;
+}
+
+.perconal_dannie p{
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Секция HP */
+.HP {
+    background: #F8F200;
+}
+
+.HP .container {
+    display: flex;
+}
+
+.HP_komp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.HP_komp_1 {
+    margin-top: 70px;
+}
+
+.HP_komp_2 {
+    margin-top: 35px;
+    margin-left: 42px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 25px;
+}
+
+.HP_text {
+    margin-left: 32px;
+}
+
+.HP_text h2 {
+    margin-top: 70px;
+    font-size: 62px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.HP_text p {
+    width: 624px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 189%;
+    color: #000;
+}
+
+.HP_text_variants p{
+    margin-left: 10px;
+}
+
+.HP_text_variants_1 {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 22px;
+}
+
+.HP_text_variants_2 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.HP_text_variants_3 {
+    display: flex;
+}
+
+.HP_text_btn {
+    margin-top: 35px;
+    margin-bottom: 80px;
+
+    background: #000;
+    width: 194px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.HP_text_btn a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #f8f200;
+}
+
+/* Покупка игры */
+
+.game-buy {
+    height: 717px;
+    background-image: url("../img/bg3.png");
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.game-buy_info {
+    margin-left: 656px;
+    padding-top: 70px;
+}
+
+.game-buy_info h2{
+    font-size: 62px;
+}
+
+.game-buy_info h6 {
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #52bedc;
+    margin-bottom: 15px;
+}
+
+.game-buy_variants_1 p, .game-buy_variants_2 p, .game-buy_variants_3 p {
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.game-buy_variants_1, .game-buy_variants_2, .game-buy_variants_3 {
+    display: flex;
+    align-items: center;
+}
+
+.game-buy_variants_1, .game-buy_variants_2 {
+    margin-bottom: 15px;
+}
+
+.game-buy_platforma h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #52bedc;
+    margin-bottom: 25px;
+}
+
+.game-buy_platforma {
+    margin-top: 70px;
+}
+
+.game-buy_platforma_1_2 {
+    display: flex;
+}
+
+.game-buy_platforma_1 {
+    gap: 50px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.game-buy_platforma_2 {
+    gap: 50px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* footer */
+
+.footer .container {
+    display: flex;
+}
+
+.footer_img_1 {
+    margin-right: 32px;
+}
+
+.footer_img {
+    margin: 13px 0;
+}
+
+.footer_info {
+    padding-left: 380px;
+    margin: 40px 0;
+    gap: 32px;
+    display: flex;
+}
+
+.footer_info a{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+/* footer-end */
+.footer-end {
+    background: #000;
+    width: 100%;
+    height: 40px;
+}
+
+.footer-end .container{
+    display: flex;
+    justify-content: center; 
+}
+
+.footer-end p {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    padding: 13px 0;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 100%;
+        max-width: 952px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .photo_1_2 {
+        flex-direction: row;
+        margin-bottom: 32px;
+    }
+
+    .nait_photo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promotion_1 {
+        display: block;
+    }
+
+    .promotion_1 h2 {
+        margin-left: 0;
+        max-width: 460px;
+        margin-top: 15px;
+    }
+
+    .promotion_info {
+        max-width: 460px;
+        margin-bottom: 98px;
+    }
+
+    .promption_2_img {
+        display: block;
+        margin-top: -600px;
+    }
+
+    .promption_2_img_pc5 {
+        margin-left: 0;
+        margin-top: -50px;
+    }
+
+    .HP_komp_1 {
+        width: 460px;
+        height: 317px;
+        margin-top: 112px;
+    }
+
+    .HP_komp_2 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 26px;
+    }
+
+    .HP_img {
+        width: 80px;
+    }
+    
+    .and {
+        width: 90px;
+    }
+    
+    .Cyberpunk_2077 {
+        width: 320px;
+    }
+
+    .HP_text {
+        width: 460px;
+    }
+
+    .HP_text p {
+        width: 460px;
+    }
+
+    .game-buy {
+        margin-left: -200px;
+    }
+
+    .game-buy_info {
+        margin-left: 500px;
+    }
+
+    .game-buy_info h2 {
+        width: 626px;
+    }
+
+    .footer_info {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcom {
+        margin-top: -131px;
+        width: 320px;
+        height: 713px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 296px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header .container {
+        display: block;
+    }
+
+    .img_logo {
+        width: 200px;
+        display: flex;
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+
+    .header_list {
+        gap: 30px;
+    }
+
+    .header_list img {
+        width: 25px;
+    }
+
+    .welcom_yellow {
+        margin-top: 0;
+        width: 320px;
+        height: 207px;
+        margin-right: -12px;
+    }
+
+    .welcom_yellow h2 {
+        font-size: 30px;
+        width: 295px;
+        text-align: center;
+        display: flex;
+        justify-self: center;
+        margin-top: 30px;
+    }
+
+    .btn {
+        font-size: 20px;
+        line-height: 200%;
+        text-align: center;
+        margin-left: 38px;
+    }
+
+    .nait {
+        margin-top: 190px;
+    }
+
+    .nait_text h2 {
+        font-size: 30px;
+
+    }
+
+    .photo_1_2 {
+        display: block;
+        margin-left: -12px;
+    }
+
+    .photo_1_2 img {
+        width: 320px;
+        height: 196px;
+    }
+    
+    .nait_photo_1 {
+        margin-bottom: 30px;
+    }
+
+    .nait_photo_3 {
+        width: 320px;
+        height: 424px;
+        margin-left: -12px;
+        object-fit: cover;
+    }
+
+    .promotion_img_1 {
+        height: 62px;
+        width: auto;
+    }
+
+    .promption_2_img {
+        width: 256px;
+        height: 131px;
+    }
+
+    .pc_and_xbox {
+        display: flex;
+        margin-top: -15px;
+    }
+
+    .promption_2_img {
+        display: none;
+    }
+
+    .promotion_1 h2 {
+    font-size: 30px;
+    margin-top: 25px;
+    }
+
+    .promotion_info {
+        width: 296px;
+        height: 213px;
+        margin-bottom: 70px;
+    }
+
+    .promption_2_anketa_person {
+        width: 296px;
+    }
+
+    .promption_2_anketa_fail {
+        display: none;
+        width: 296px;
+        height: 120px;
+        background-image: url("../img/prikreoit.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promption_2_anketa_fail a{
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    }
+
+    .promption_2_anketa_fail h6 {
+        display: none;
+    }
+
+    .promotion_info p {
+        font-size: 16px;
+    }
+
+    .promption_2_anketa_person_btn {
+        width: 182px;
+        height: 60px;
+    }
+
+    .promption_2_anketa_person_btn a {
+        font-size: 16px;
+    }
+
+    .HP_komp_1 {
+        margin-top: 70px;
+        width: 296px;
+        height: 204px;
+    }
+
+    .HP_komp_2 {
+        flex-direction: row;
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .HP_img {
+        width: 44px;
+    }
+
+    .and {
+        width: 50px;
+        height: 11px;
+    }
+
+    .Cyberpunk_2077 {
+        width: 175px;
+        height: 44px;
+    }
+
+    .HP .container {
+        display: block;
+    }
+
+    .HP_text {
+        margin: 0;
+    }
+
+    .HP_text h2 {
+        font-weight: 400;
+        font-size: 30px;
+        color: #000;
+        width: 296px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .HP_text p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        color: #000;
+        width: 296px;
+    }
+
+    .HP_text_variants {
+        font-size: 16px;
+    }
+
+    .HP_text_variants img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .HP_text_variants_1 {
+        align-items: center;
+    }
+
+    .HP_text_variants_2 {
+        align-items: center;
+    }
+
+    .HP_text_variants_3 {
+        align-items: center;
+    }
+
+    .HP_text_variants_img_3 {
+        padding-bottom: 20px;
+    }
+
+    .HP_text_btn {
+        margin-top: 40px;
+        margin-bottom: 0;
+        width: 184px;
+        height: 60px;
+    }
+
+    .HP_text_btn a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #f8f200;
+    }
+
+    .HP {
+        padding-bottom: 70px;
+    }
+
+    .game-buy {
+        width: 320px;
+        height: 785px;
+        background-image: url('../img/bg_11.png');
+        background-size: cover; 
+        background-position: center;
+        margin: 0;
+    }
+
+    .game-buy_info {
+        margin: 0;
+        padding: 0;
+        padding-top: 228px;
+    }
+
+    .game-buy_info h2 {
+    font-weight: 400;
+    font-size: 30px;
+    width: 296px;
+    }
+
+    .game-buy_info h6 {
+    font-weight: 700;
+    font-size: 20px;
+    }
+
+    .game-buy_variants p {
+        font-size: 16px;
+    }
+
+    .game-buy_variants_1 img {
+        width: 20px;
+    }
+
+    .game-buy_variants_2 img {
+        width: 20px;
+    }
+
+    .game-buy_variants_3 img {
+        width: 20px;
+    }
+
+    .game-buy_platforma h6 {
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .game-buy_platforma_2 {
+        margin-left: 58px;
+    }
+
+    .footer_img {
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .footer_img_1 {
+        width: 200px;
+        height: 50px;
+        padding-bottom: 25px;
+    }
+
+    .footer_img_2 {
+        width: 116px;
+        height: 50px;
+    }
+
+    .footer .container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer .container img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer_info{
+        background: #e6e6e6;
+        width: 320px;
+        height: 103px;
+        margin-left: -12px;
+        margin-bottom: 0;
+        margin-top: 25px;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .footer_info a {
+        display: block;
+    }
+
+    .a1 {
+        padding: 25px 0 15px;
+    }
+}
